@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Performance Index Predictor</title>
+</head>
+<body>
+    <h2>Enter Student Info</h2>
+    <form action="/predict" method="post">
+        Hours Studied: <input type="number" step="any" name="hours_studied"><br>
+        Previous Scores: <input type="number" step="any" name="previous_scores"><br>
+        Extracurricular Activities (Yes/No): <input type="text" name="extracurricular"><br>
+        Sleep Hours: <input type="number" step="any" name="sleep_hours"><br>
+        Sample Papers Practiced: <input type="number" name="sample_papers"><br>
+        <input type="submit" value="Predict">
+    </form>
+
+    {% if prediction_text %}
+    <h3>{{ prediction_text }}</h3>
+    {% endif %}
+</body>
+</html>
