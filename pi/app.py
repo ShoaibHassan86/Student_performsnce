@@ -1,9 +1,11 @@
 import streamlit as st
 import pandas as pd
 import pickle
-
+import os
 # Load model
-model = pickle.load(open('performance_index.sav', 'rb'))
+
+model_path = os.path.join(os.path.dirname(__file__), 'performance_index.sav')
+model = pickle.load(open(model_path, 'rb'))
 
 # Page config
 st.set_page_config(page_title="Student Performance Predictor", page_icon="📊", layout="centered")
