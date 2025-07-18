@@ -19,11 +19,11 @@ st.markdown("### 📝 Enter Student Details:")
 col1, col2 = st.columns(2)
 
 with col1:
-    hours_studied = st.number_input("📘 Hours Studied", min_value=0.0, step=0.5)
+    hours_studied = st.number_input("📘 Hours Studied", min_value=0.0, max_value=10.0, step=0.5)
 
     extracurricular = st.radio("🎭 Extracurricular Activities", ['Yes', 'No'], index=0)
 
-    sleep_hours = st.number_input("💤 Average Sleep Hours", min_value=0.0, step=0.5)
+    sleep_hours = st.number_input("💤 Average Sleep Hours", min_value=0.0, max_value=10.0, step=0.5)
 
 with col2:
     previous_scores = st.number_input("📊 Previous Scores (out of 100)", min_value=0.0, max_value=100.0, step=1.0)
