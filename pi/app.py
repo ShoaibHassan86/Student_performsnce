@@ -10,7 +10,7 @@ def load_local_css(file_name):
 # Call it
 load_local_css("style.css")
 
-model = pickle.load(open('car_prices.sav', 'rb'))
+model = pickle.load(open('car.sav', 'rb'))
 
 
 
