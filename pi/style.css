@@ -2,7 +2,7 @@
 
 /* Background Image Styling */
 .stApp {
-    background: url("https://unsplash.com/illustrations/a-man-sitting-at-a-desk-in-front-of-a-window-8-cPPy0BuIw") no-repeat center center fixed;
+    background: url("url("https://images.unsplash.com/photo-1616400619175-5beda3a17896?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") no-repeat center center fixed;
     background-size: cover;
     opacity: 0.99;
 }
