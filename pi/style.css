@@ -44,7 +44,7 @@ h1 {
 }
 
 [data-testid="stSuccess"] {
-    background-color: #145A32;  /* Solid dark green */
+    background-color: #005999;  /* Solid dark green */
     color: #000000;             /* Black text */
     font-weight: bold;          /* Bold text */
     font-size: 22px;
