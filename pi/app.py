@@ -12,8 +12,6 @@ def load_local_css(file_name):
     except FileNotFoundError:
         st.warning("⚠️ style.css not found. Default styling applied.")
 
-css_path = os.path.join(os.path.dirname(__file__), 'style.css')
-load_local_css(css_path)
 
 model_path = os.path.join(os.path.dirname(__file__), 'performance_index.sav')
 model = pickle.load(open(model_path, 'rb'))
