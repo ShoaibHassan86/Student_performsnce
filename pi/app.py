@@ -11,14 +11,15 @@ def load_local_css(file_name):
             st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
     except FileNotFoundError:
         st.warning("⚠️ style.css not found. Default styling applied.")
+# Page config
+st.set_page_config(page_title="Student Performance Predictor", page_icon="📊", layout="centered")
+load_local_css("style.css")
+
 
 
 model_path = os.path.join(os.path.dirname(__file__), 'performance_index.sav')
 model = pickle.load(open(model_path, 'rb'))
 
-# Page config
-st.set_page_config(page_title="Student Performance Predictor", page_icon="📊", layout="centered")
-load_local_css("style.css")
 
 # Title with style
 st.markdown("<h1 style='text-align: center; color: navy;'>🎓 Student Performance Index Predictor</h1>", unsafe_allow_html=True)
