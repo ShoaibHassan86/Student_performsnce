@@ -3,7 +3,9 @@ import pandas as pd
 import pickle
 
 # Load model
-model = pickle.load(open('performance_index.sav', 'rb'))
+import os
+model_path = os.path.join(os.path.dirname(__file__), 'performance_index.sav')
+model = pickle.load(open(model_path, 'rb'))
 
 # Page config
 st.set_page_config(page_title="Student Performance Predictor", page_icon="📊", layout="centered")
