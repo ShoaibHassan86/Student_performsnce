@@ -44,11 +44,12 @@ h1 {
 }
 
 [data-testid="stSuccess"] {
-    background-color: #145A32;  /* Dark green */
+    background-color: #145A32;  /* Solid dark green */
     color: #000000;             /* Black text */
+    font-weight: bold;          /* Bold text */
     font-size: 22px;
     border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 4px 12px rgba(20, 90, 50, 0.4); /* Optional dark green shadow */
+    padding: 15px;
+    box-shadow: none;           /* No transparency or glow */
 }
 
