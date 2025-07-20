@@ -48,7 +48,7 @@ h1 {
     color: #000000;             /* Black text */
     font-size: 28px;
     border-radius: 10px;
-    padding: 15px;
+    padding: 20px;
     box-shadow: 0 4px 12px rgba(20, 90, 50, 0.4); /* Optional dark green shadow */
 }
 
