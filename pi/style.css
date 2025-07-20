@@ -43,11 +43,12 @@ h1 {
     color: #000000;
 }
 
-/* Prediction result box */
 [data-testid="stSuccess"] {
-    background-color: #0c348b;
-    color: #0c581e;
+    background-color: #007BFF; /* Bright Bootstrap blue */
+    color: white;              /* White text for contrast */
     font-size: 22px;
     border-radius: 10px;
     padding: 15px;
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.2); /* Optional soft glow */
 }
+
